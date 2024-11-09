@@ -37,4 +37,4 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: html test
-        run: echo Hello, world!
+        run: npx htmlhint index.html
