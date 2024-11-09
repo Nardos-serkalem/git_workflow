@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main", "tests" ]
+    branches: [ "main", "test" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "test" ]
 
   
 
@@ -40,4 +40,7 @@ jobs:
           echo test, and deploy your project.
     
       - name: html test
-        run: npx htmlhint index.html
+        run: | 
+          npx htmlhint index.html
+          npx htmlhint about.html
+      
