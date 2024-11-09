@@ -26,6 +26,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
+      - name: dependency
+        run: npm install htmlhint --save dev
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
@@ -36,5 +38,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+    
       - name: html test
         run: npx htmlhint index.html
