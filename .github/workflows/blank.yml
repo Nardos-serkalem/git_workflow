@@ -36,5 +36,5 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-      - name: Run a one-line script
+      - name: html test
         run: echo Hello, world!
