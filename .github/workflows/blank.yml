@@ -40,4 +40,7 @@ jobs:
           echo test, and deploy your project.
     
       - name: html test
-        run: npx htmlhint index.html
+        run: | 
+          npx htmlhint index.html
+          npx htmlhint about.html
+      
